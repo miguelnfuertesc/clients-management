@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fff"
+    tools:context=".view.GestionDeClientesActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#e83030"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Gestión de Clientes"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/btnHome"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#e83030"
+                android:layout_marginRight="1dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnAgregar"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#e83030"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnActualizar"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#e83030"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_update"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_update"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_update"
+                    android:gravity="center"
+                    android:tint="#FFFFFFFF" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnEliminar"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#e83030"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:gravity="center"
+                    android:tint="#ffffff" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:gravity="center"
+                    android:tint="#ffffff" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:gravity="center"
+                    android:tint="#ffffff" />
+            </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
